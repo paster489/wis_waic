@@ -5,34 +5,34 @@ The new-\* are queues without GPU?
 
 I think, yes. I checked which hosts are inside new\* queues:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.001.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.001.png)
 
 
 and checked, for example the host group = ginossar\_host => it includes two hosts: cn242 and cn243:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.002.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.002.png)
 
 I run the command: ssh cn242 'nvidia-smi' => to see which type of GPU is there => the output was:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.003.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.003.png)
 
 or you can run:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.004.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.004.png)
 
 so, my conclusion => it is not GPU.
 
 There are additional queue which includes GPU, like yan-gpu with even higher priority than waic\* queue:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.005.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.005.png)
 
 yam-gpu queue includes 2 hosts ibdgx011 and ibdgx012:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.006.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.006.png)
 
 and these hosts are GPUs =>
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.007.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.007.png)
 
 However, we can not use this queue:
 
@@ -44,11 +44,11 @@ so, our GPUs are waic\* and gpu\*.
 
 I forgot to mention in the Task 3 that waic-risk can be preempted by waic-short/long/medium
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.009.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.009.png)
 
 But on the other side waic-risk has not limits 300/60, which we saw for other waic\*:
 
-![](Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.010.png)
+![](img/Aspose.Words.af45fbb7-2117-456d-a17c-2a99a7468b08.010.png)
 
 
 
